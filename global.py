@@ -4,26 +4,48 @@ class mutante:
     def __init__(self,dnaMatriz):
         self.dnaMatriz = dnaMatriz
 
-    #agrego el metodo isMutant peido por el ejercicio
+    #agrego el metodo isMutant pedido por el ejercicio
     def isMutant(self):
         #guardo el len de la matriz
         n = len(self.dnaMatriz)
+
         #contador de secuencias iguales
         contador = 0
 
         #recorro matriz para buscar las letras iguales
+        """
         for i in range(n):
             for j in range(n - 3):
                 #verifico las horizontales
-                if self.secuenciaLetras(self.dnaMatriz[i][j:j+4]):
+                secHorizontal = self.dnaMatriz[i][j:j + 4]
+                if self.secuencia(secHorizontal):
                     contador += 1
+        
+        for i in range(n -3):
+            for j in range(n):
+                #verifico las verticales
+                if self.secuencia([self.dnaMatriz[k][j] for k in range(i, i + 4)]):
+                    contador += 1
+        """
 
-        #si el contador es mayor a uno devuelve True
-        return contador > 1
+        for i in range(n - 3):
+            for j in range(n - 3):
+                #verifico diagonal izquierda-derecha
+                secDiagonalIzqDer = [self.dnaMatriz[i + k][j + k] for k in range(4)]
+                if self.secuencia(secDiagonalIzqDer):
+                    contador += 1
+                """
+                #verifico diagonal derecha-izquierda
+                secDiagonalDerIzq = [self.dnaMatriz[i + k][j + 3 - k] for k in range(4)]
+                if self.secuencia(secDiagonalDerIzq):
+                    contador += 1
+                """
+        if contador > 1:
+            return True
 
     #verifico si hay 4 letras iguales seguidas        
-    def secuenciaLetras(self,secuencia):
-        return secuencia.count(secuencia[0]) == 4
+    def secuencia(self,secuencia):
+        return len(set(secuencia)) == 1
 
 
 def validacionLetra(letra):
