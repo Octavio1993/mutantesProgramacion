@@ -91,6 +91,8 @@ python global.py
 
 * En esta versión el usuario elige de un diccionario alguna matriz ya establecida, por lo tanto no debe ingresar letra a letra en una matriz.
 
+> ## Como se resolvió el proyecto
+
 * La lógica de búsqueda de secuencia es la misma.
 
 * La diferencia con respecto al no hardcodeado es que el programa pregunta que opción desea usar el usuario de matriz.
