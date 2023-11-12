@@ -1,5 +1,5 @@
 
-> # mutantesProgramacion
+> # ***mutantesProgramacion***
 
     * Octavio Nicolas Ragusa
     * DNI: 36850596
@@ -86,3 +86,59 @@ python global.py
 ```bash
 "Desea continuar con la carga de ADN, para otra persona?(S/N)"
 ```
+
+> # ***Versión Hardcodeada***
+
+* En esta versión el usuario elige de un diccionario alguna matriz ya establecida, por lo tanto no debe ingresar letra a letra en una matriz.
+
+* La lógica de búsqueda de secuencia es la misma.
+
+* La diferencia con respecto al no hardcodeado es que el programa pregunta que opción desea usar el usuario de matriz.
+
+```bash
+def opcionesMatrices():
+    print("Opciones de matrices para ejecutar el programa")
+    print("1. Matriz 1")
+    print("2. Matriz 2")
+    print("3. Matriz 3")
+    print("4. Matriz 4")
+    print("5. Matriz 5")
+```
+
+* Con respecto a la opción elegida, la busca en el diccionario.
+
+```bash
+(parte del diccionario)
+def opcionesCreadas(elegirMatriz):
+    matrices = {
+        #matriz no mutante
+        1: [
+            ["A", "T", "G", "C", "G", "A"],
+            ["C", "A", "G", "T", "G", "C"],
+            ["T", "T", "A", "T", "T", "T"],
+            ["A", "G", "A", "C", "G", "G"],
+            ["G", "C", "G", "T", "C", "A"],
+            ["T", "C", "A", "C", "T", "G"]
+        ],
+```
+
+* Muestra el resultado como en la versión no hardcodeada
+
+> ### Como correrlo
+
+* **Enlace para clonar el repositorio**
+    
+    * https://github.com/Octavio1993/mutantesProgramacion.git
+
+* Ingresar al directorio del proyecto y ejecutar el programa (VSCode):
+``` bash
+python globalHardcodeado.py
+
+```
+
+* Seguir las instrucciones en la consola para ingresar los datos pedidos:
+```bash
+"Ingrese el número de la matriz a usar: "
+```
+
+* El algoritmo de búsqueda, el resultado y la continuación del programa es igual al programa no hardcodeado.
