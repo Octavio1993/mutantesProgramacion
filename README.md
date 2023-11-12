@@ -13,9 +13,20 @@
 
 * **Ingresa la secuencia de ADN**
     
-    * Usuario ingresada la secuencia de ADN, usando las letras G,C,A,T para crear la matriz.
+    * Usuario ingresa la secuencia de ADN, usando las letras G,C,A,T para crear la matriz. A través de la función crearMatriz(). La cual pide las letras, y las guarda dentro de la matriz, devolviendo la matriz llena.
 
-    * Se verifica que las letras ingresadas sean las pedidas por el programa.
+    ```bash
+    #creo la matriz
+    dnaMatriz = ingresarMatriz()
+    ```
+
+    * Se verifica que las letras ingresadas sean las pedidas por el programa, antes de guardarlas en la matriz. A través del método validacionLetra()
+
+    ```bash
+    def validacionLetra(letra):
+    #verifico si la letra es G,C,T,A y si es solamente una sola letra por cada ingreso
+    return letra.upper() in ['G','C','A','T'] and len(letra) == 1
+    ```
 
 * **Detección de Mutantes:**
 
