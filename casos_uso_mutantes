@@ -1,0 +1,41 @@
+##tomando filas numeradas de 1 a 6, al igual que las columnas##
+#matriz no mutante
+    ["A", "T", "G", "C", "G", "A"],
+    ["C", "A", "G", "T", "G", "C"],
+    ["T", "T", "A", "T", "T", "T"],
+    ["A", "G", "A", "C", "G", "G"],
+    ["G", "C", "G", "T", "C", "A"],
+    ["T", "C", "A", "C", "T", "G"]
+
+#matriz mutante horizontal filas 2, 3 y 4
+    ["A", "T", "G", "C", "G", "A"],
+    ["C", "C", "C", "C", "G", "C"],
+    ["T", "A", "T", "T", "T", "T"],
+    ["A", "G", "A", "A", "G", "G"],
+    ["C", "C", "C", "C", "T", "A"],
+    ["T", "C", "A", "C", "T", "G"]
+
+#matriz mutante vertical columnas 1 y 4
+    ["A", "T", "G", "C", "G", "A"],
+    ["A", "A", "G", "T", "G", "C"],
+    ["A", "T", "A", "T", "T", "T"],
+    ["A", "G", "A", "T", "G", "G"],
+    ["C", "C", "C", "T", "T", "A"],
+    ["T", "C", "A", "C", "T", "G"]
+
+#matriz mutante diagonal izquierda a dereche empezando en la posición 1,1; diagona lde derecha a izquierda empezando en la posición 5,2
+    ["A", "T", "G", "C", "G", "A"],
+    ["C", "A", "G", "T", "G", "C"],
+    ["T", "T", "A", "G", "T", "T"],
+    ["A", "G", "G", "A", "G", "G"],
+    ["A", "G", "C", "C", "T", "A"],
+    ["T", "C", "A", "C", "T", "G"]
+
+#matriz mutante combinada diagonal izquierda a derecha en posición 1,1; vertical en la columna 5 y horizontal en la fila 5
+    ["A", "T", "G", "C", "G", "A"],
+    ["C", "A", "G", "T", "G", "C"],
+    ["T", "T", "A", "T", "T", "T"],
+    ["A", "G", "A", "A", "T", "G"],
+    ["C", "C", "C", "C", "T", "A"],
+    ["T", "C", "A", "C", "T", "G"]
+
